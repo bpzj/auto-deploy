@@ -2,6 +2,14 @@
     <id>com.bpzj.auto</id>
     <name>deploy</name>
     <vendor>bpzj</vendor>
+    <description><![CDATA[
+        <h2>build application, deploy to remote host and monitor logs.</h2>
+        <em>在 IntelliJ IDE 中自动打包并部署应用</em><br>
+        <hr>
+        <a href="https://github.com/bpzj/auto-deploy/releases">Download offline plugin package</a><br>
+        <a href="https://github.com/bpzj/auto-deploy">https://github.com/bpzj/auto-deploy</a><br>
+    ]]>
+    </description>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->

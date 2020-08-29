@@ -1,4 +1,4 @@
-# auto-deploy Changelog
+# auto deploy Changelog
 
 ## [0.1.0]
 ### Added

@@ -10,7 +10,7 @@ plugins {
 
 
 pluginGroup = "com.bpzj.auto"
-pluginName = "auto-deploy"
+pluginName = "auto deploy"
 pluginVersion = "0.0.1"
 pluginSinceBuild = "193"
 pluginUntilBuild = "202.*"

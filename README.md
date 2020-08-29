@@ -5,7 +5,6 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
 ## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
 - [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
 - [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
 - [ ] [Publish a plugin manually](https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/publishing_plugin.html) for the first time.
@@ -22,16 +21,12 @@ extracted by the [Gradle](/build.gradle.kts) during the build process.
 To keep everything working, do not remove `<!-- ... -->` sections. 
 <!-- Plugin description end -->
 
+
 ## Installation
 
-- Using IDE built-in plugin system:
-  
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "auto-deploy"</kbd> >
-  <kbd>Install Plugin</kbd>
-  
 - Manually:
 
-  Download the [latest release](https://github.com/bpzj/auto-deploy/releases/latest) and install it manually using
+  Download the [latest release](https://github.com/bpzj/auto deploy/releases/latest) and install it manually using
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 
