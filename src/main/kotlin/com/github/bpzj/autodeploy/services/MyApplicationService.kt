@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.bpzj.autodeploy.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.bpzj.autodeploy.MyBundle
 
 class MyApplicationService {
 
