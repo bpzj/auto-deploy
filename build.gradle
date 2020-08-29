@@ -1,0 +1,65 @@
+
+plugins {
+    // Java support
+    id "java"
+    // gradle-intellij-plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
+    id "org.jetbrains.intellij" version "0.4.21"
+    // gradle-changelog-plugin - read more: https://github.com/JetBrains/gradle-changelog-plugin
+    id "org.jetbrains.changelog" version "0.4.0"
+}
+
+
+pluginGroup = "com.bpzj.auto"
+pluginName = "auto-deploy"
+pluginVersion = "0.0.1"
+pluginSinceBuild = "193"
+pluginUntilBuild = "202.*"
+
+platformType = "IC"
+platformVersion = "2019.3"
+platformDownloadSources = true
+
+group = pluginGroup
+version = pluginVersion
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    mavenCentral()
+}
+
+
+dependencies {
+    compile group: 'com.hierynomus', name: 'sshj', version: '0.30.0'
+}
+
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2019.3'
+// Configure gradle-intellij-plugin plugin.
+// Read more: https://github.com/JetBrains/gradle-intellij-plugin
+    pluginName "auto deploy"
+    downloadSources  false
+    updateSinceUntilBuild  true
+
+//  Plugin Dependencies:
+//  https://www.jetbrains.org/intellij/sdk/docs/basics/plugin_structure/plugin_dependencies.html
+//
+//    setPlugins("java")
+}
+
+
+
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+
+
+
+

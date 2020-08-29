@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.github.bpzj.autodeploy</id>
-    <name>auto-deploy</name>
+    <id>com.bpzj.auto</id>
+    <name>deploy</name>
     <vendor>bpzj</vendor>
 
     <!-- Product and plugin compatibility requirements -->
@@ -8,12 +8,17 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.bpzj.autodeploy.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.bpzj.autodeploy.services.MyProjectService"/>
+        <applicationService serviceImplementation="com.bpzj.auto.deploy.services.MyApplicationService"/>
+        <projectService serviceImplementation="com.bpzj.auto.deploy.services.MyProjectService"/>
     </extensions>
 
     <projectListeners>
-        <listener class="com.github.bpzj.autodeploy.listeners.MyProjectManagerListener"
+        <listener class="com.bpzj.auto.deploy.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </projectListeners>
+    <actions>
+        <action id="com.bpzj.auto.deploy.action.PopupDialogAction" class="com.bpzj.auto.deploy.action.PopupDialogAction" text="Pop Dialog Action" description="example">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
